@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Chapter5-6
+        </title>
+        <style>
+  body{
+         background-color:darkcyan;
+         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         margin-top: 1px;
+         
+      }
+      h1,h2,h3,h4,h5,h6{
+         color:aliceblue;
+      }
+      h1{
+         font-size: 1.5em;
+      }
+      h2{
+         font-size: 1.05em;
+      }
+      h3{
+         font-size: 0.95em;
+      }
+      h4{
+        font-size: 0.75em;
+      }
+      ol{
+         margin-left: 0.5em;
+         color:antiquewhite;
+        
+      }
+      ol li{
+        padding-top: 0.25em;
+
+      }
+      .answer{
+        color:aquamarine;
+        padding-right: 1em;
+        padding: 0%;
+      }
+      td{
+        border: 3px solid darkblue;
+        color:black;
+        padding: auto;
+      }
+      th{
+        color:brown;
+        border: 2px solid black ;
+      }
+      table{
+         width: 1000px;
+         font-size: 1em;
+         font-weight: bold;
+         background-color:coral;
+         margin: auto;
+      }
+      
+      a:link{
+         color:blanchedalmond
+      }
+      a:visited{
+         color:cadetblue
+      }
+      a:hover{
+         color:darkorchid
+      }
+      a:active{
+         color:beige
+      }
+        </style>
+    </head>
+    <body>
+        <header>
+            <table>
+                <tr style="background-color:burlywood;">
+                    <th><a href="index.html">Home</a></th>
+                    <th><a href="https://www.pvcc.edu/">PVCC</a></th>
+                    <th><a href="https://www.w3schools.com/html/">W3 Schools</a></th>
+                    <th><a href="contactus.html">Contact Us</a></th>
+                </tr>
+            </table>
+        </header>
+        <main>
+            <table>
+                <tr>
+                    <td colspan="4">
+                        Chapter 5:Computer Systems Organization
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        Student: Saroj Tamang
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td colspan="4">
+                        Von Neumann Computer Architecture, 4 Major Subsystems:
+                        <ol>
+                            <li>Memory.</li>
+                            <li>Input/Output.</li>
+                            <li>The Arithmetic/Logic Unit.</li>
+                            <li>The Control Unit.</li>
+                        </ol>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td colspan="4">
+                        Von Neumann Computer Architecture, 3 Characteristics:
+                        <ol>
+                            <li>The Four major subsystems.</li>
+                            <li>The Stored Program Concept.</li>
+                            <li>The Sequential Execution Of Instructions.</li>
+                        </ol>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="4">
+                        Computer Architecture Terms:
+                        <ol>
+                            <li>RAM: <span class="answer"> is the hardware in a computing device where the operating system (OS), application programs and data in current use are kept so they can be quickly reached by the device's processor.</span></li>
+                            <li>Cache:<span class="answer">cache is a high-speed data storage layer which stores a subset of data, typically transient in nature, so that future requests for that data are served up faster than is possible by accessing the data's primary storage location.</span> </li>
+                            <li>Principle of locality: The high likelihood that when a program fetches a piece of data or an instruction:</li>
+                            <ol>
+                                <li><span class="answer">It will access that same instruction or piece of data in the very near future.</span></li>
+                                <li><span class="answer">It will soon access the instructions or data that are located near that piece of data, where “near” means an address whose numerical value is close to this one.</span></li>
+                            </ol>
+                            <li>ROM: <span class="answer">a type of computer storage containing non-volatile, permanent data that, normally, can only be read, not written to.</span></li>
+                            <li>Memory cell size:<span class="answer">Memory cells can be of different sizes: 8 bits, 16 bits, 32 bits, 64 bits.</span></li>
+                            <li>Memory Cell Address:<span class="answer"> a unique identifier used by a device or CPU for data tracking. </span></li>
+                            <li>Maximum Memory Size:<span class="answer">the maximum amount of memory can be expanded within a system.</span></li>
+                            <li>Register:<span class="answer">one of a small set of data holding places that are part of the computer processor.</span></li>
+                            <li>Fetch:<span class="answer">the retrieval of data by a software program, script, or hardware device. </span></li>
+                            <li>Store:<span class="answer">a document where information concerning the description code numbers of all items held in stock is kept for future use.</span></li>
+                            <li>Memory Access Time:<span class="answer">how long it takes for a character in RAM to be transferred to or from the CPU.</span></li>
+                            <li>DASD:<span class="answer">"Direct Access Storage Device," which is a type of storage device used in mainframe computers. </span></li>
+                            <li>Arithmetic And Logic Unit (ALU):<span class="answer">a combinational digital circuit that performs arithmetic and bitwise operations on integer binary numbers.</span></li>
+                            <li>Control Unit<span class="answer">handles all processor control signals.</span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" >
+                        Chapter 7:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" >
+                        Four things the interface between the Computer and the Hardware does:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol>
+                            <li>Hides from the user the messy details of the underlying hardware.</li>
+                            <li>Presents information about what is happening in a way that does not require in-depth knowledge of the internal structure of the system.</li>
+                            <li>Allows easy user access to the resources available on this computer.</li>
+                            <li>Prevents accidental or intentional damage to hardware, programs, and data.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" >
+                        Responsibilities of Systems Software:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol>
+                            <li>Hides the complex and unimportant (to the user) details of the internal structure of the Von Neumann architecture.</li>
+                            <li>Presents important information to the user in a way that is easy to understand.</li>
+                            <li>Allows the user to access machine resources in a simple and efficient way.</li>
+                            <li>Provides a secure and safe environment in which to operate.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" >
+                        Terms:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol>
+                            <li>Systems Software:<span class="answer">a type of computer program that is designed to run a computer's hardware and application programs.</span></li>
+                            <li>User Interface
+                                :<span class="answer">he point of human-computer interaction and communication in a device. </span></li>
+                            <li>Language Services:<span class="answer">a type of service that enables communication between a brand and audiences outside of their language and culture.</span></li>
+                            <li>Memory Managers:<span class="answer">the process of controlling and coordinating a computer's main memory.</span></li>
+                            <li>Information Managers:<span class="answer">primarily concerned with the capture, digitization, representation, organization, transformation, and presentation of information.</span></li>
+                            <li>I/O Managers:<span class="answer">user-provided objects that store asset and op outputs and load them as inputs to downstream assets and ops.</span></li>
+                            <li>Scheduler:<span class="answer">the action of assigning resources to perform tasks.</span></li>
+                            <li>Utilities:<span class="answer">A piece of code can be called a utility if it seems too small to be considered as a separate application, and too general-purpose to be considered as part of a particular program.</span></li>
+                            <li>Assembly Language:<span class="answer">a type of low-level programming language that is intended to communicate directly with a computer's hardware.</span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        Functions of an Operating System:
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ol>
+                            <li><span class="answer">The User Interface.</span></li>
+                            <li><span class="answer">System Security and Protection.</span></li>
+                            <li><span class="answer">Efficient Management of Resources.</span></li>
+                            <li><span class="answer">The Safe Use of Resources.</span></li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" >
+                        Size of Byte Groups: Powers of 10:
+                    </td>
+                </tr>
+                <table>
+                <tr>
+                    <th>Quantity in Bytes</th>
+                    <th> Base-10 Value</th>
+                    <th>Amount of Textual Information</th>
+                </tr>
+                <tr>
+                    <td>1 Byte</td>
+                    <td>10^0</td>
+                    <td>One Character</td>
+                </tr>
+                <tr>
+                    <td>1 kilobyte</td>
+                    <td>10^3</td>
+                    <td>One typed page</td>
+                </tr>
+                <tr>
+                    <td>1 Megabyte</td>
+                    <td>10^6</td>
+                    <td>Two Or Three Novels</td>
+                </tr>
+                <tr>
+                    <td>1 Gigabyte</td>
+                    <td>10^9</td>
+                    <td>A Department Libary Or Large Personal Libary</td>
+                </tr>
+                <tr>
+                    <td>1 Terabyte</td>
+                    <td>10^12</td>
+                    <td>The Libary Of A Major Academic Research Universtiy</td>
+                </tr>
+                <tr>
+                    <td>1 Petabyte</td>
+                    <td>10^15</td>
+                    <td>All Printed Material In All Libraries</td>
+                </tr>
+                <tr>
+                    <td>1 Exabyte</td>
+                    <td>10^18</td>
+                    <td>All Words Ever Printed Throughout Human History</td>
+                </tr>
+                <tr>
+                    <td>1 Zettabyte</td>
+                    <td>10^21</td>
+                    <td>As Of 2014, The Total Amount Of Information Stored Globally On The World Wide Web Was About 4-5 Zettabytes</td>
+                </tr>
+                <tr>
+                    <td>1 Yottabyte</td>
+                    <td>10^24</td>
+                    <td>According To An Article In Gizomodo, A Design And Technology Blog, Storing 1 Yottabyte Of Data On Hard Drives Would Require 1 Million Data Centers That Would Fill The States Of Rhode Island And Delaware                    </td>
+                </tr>
+                <tr>
+                </table>
+            </table>
+        </main>
+        <footer>
+            <table>
+                
+                <tr>
+                  
+                    <td colspan="4">
+                        Sources:<br>
+                        Schneider, Michael G., and Gersting, Judith L. <i>Invitation to Computer Science.</i> Cengage, 2019.
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </body>
+</html>
