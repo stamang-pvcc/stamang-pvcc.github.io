@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+        <!--
+            NAME: Saroj T.
+            DESCRIPTION: This program will perform simple arithmetic in JavaScript
+        -->
+    <head>
+        <title>
+            Simple Arithmetic
+        </title>
+        <style>
+      body{
+         background-color:darkkhaki;
+         font-family: arial, helvetica, sans-serif; 
+         margin-top: 0px;
+         
+      }
+      h1,h2,h3,h4,h5,h6{
+         color:aqua;
+      }
+      h1{
+         font-size: 1.5em;
+         margin-left: 1em;
+      }
+      h2{
+         font-size: 1.05em;
+         margin-left: 2em;
+      }
+      h3{
+         font-size: 0.95em;
+         margin-left: 2em;
+      }
+      ul{
+         margin-left: 2.5em;
+      }
+      table{
+         width:800px;
+         font-size: 1em;
+         font-weight: bold;
+         background-color:dodgerblue;
+         margin: auto;
+      }
+      a{
+         text-decoration: none;
+      }
+      a:link{
+         color:brown;
+      }
+      a:visited{
+         color:aliceblue;
+      }
+      a:hover{
+         color:darkgoldenrod;
+      }
+      a:active{
+         color:antiquewhite;
+      }
+      form{
+        display: inline-block;
+        width: 300px;
+        height: auto;
+        margin: auto;
+        padding: 10em 13em 1em
+      }
+        </style>
+        <script type="text/JavaScript">
+            
+        function calculate()
+        {
+        //define variables
+            var num1;
+            var num2;
+            var addans;
+            var subans;
+            var multans;
+            var divans;
+            var modans;
+        //get data from user
+            num1 = prompt("Enter the first number:");
+            num2 = prompt("Enter the second number:");
+        
+        //perform calculations
+            addans = num1 * 1 + num2 * 1; //make sure num1 & num2 are numeric
+            subans = num1 - num2;
+            multans = num1 * num2;
+            divans = num1 / num2;
+            modans = num1 % num2;
+        //display results
+            document.write("<h1 style='color:#7D3C98;'>Arithmetic Answers</h1>");
+            document.write("Addition of " + num1 + " and " + num2 + " equals " + addans + "<br />");
+            document.write("Subtraction of " + num1 + " and " + num2 + " equals " + subans + "<br />");
+            document.write("Multiplication of " + num1 + " and " + num2 + " equals " + multans + "<br />");
+            document.write("Division of " + num1 + " by " + num2 + " equals " + divans + "<br />");
+            document.write("Modulus of " + num1 + " and " + num2 + " equals " + modans + "<br />");
+            document.write("</h2>");
+        
+        }
+        </script>
+    </head>
+    <body>
+        <header>
+            <table>
+                <tr style="background-color:darkgreen;">
+                    <th><a href="index.html">Home</a></th>
+                    <th><a href="https://www.pvcc.edu/">PVCC</a></th>
+                    <th><a href="https://www.w3schools.com/html/">W3 Schools</a></th>
+                    <th><a href="contactus.html">Contact Us</a></th>
+                </tr>
+            </table>
+        </header>
+        <main>
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <form>
+                        <input type="button" value="Click here for arithmetic calculations" class="calcbutton" onclick="calculate()">
+                        </form>                        
+                    </td>
+                </tr>        
+
+            </table>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
