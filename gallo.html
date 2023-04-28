@@ -3,79 +3,93 @@
 <!--    Name: Saroj T.   -->
 <!--    Program Purpose: This is program will find the cost of pizza & subs     
 -->
-    <head>
-        <title>Gallo Pizza & Sub Shop</title>
-        <style>
-            body{
-            color:burlywood;
-            background-color:firebrick;
-            font-family:Georgia, 'Times New Roman', Times, serif
-            font-size: 13px;
-            }
-            .wrapper{
-                width: 500px;
-                margin: auto;
-            }
-            table{
-                border: 6px solid lightblue;
-                
-                margin: auto;
-                color:darkred
-                background-color:ghostwhite
-                width: 300px;
-            }
-            .content{
-                width: 800px;
-                background-color:maroon;
-                padding: .5em;
-            }
-            .content td{
-                border: none;
-                color:bisque;
-            }
-            .nav{
-                width: 600px;
-                border: none;
-                text-align: center;
-            }
-            img{
-                width: 500;
-                height: auto;
 
-            }
-            a{
-                text-decoration: none;
-            }
-            
-            h3{
-                text-align: center;
-            }
-            
-            .table{
-                text-align: center;
-                border-collapse: collapse;
-                background-color:blanchedalmond;
-            }
-            .table td{
-                border: 4px solid rgb(110, 46, 145);
-                color: #990000;
-                font-size: 1.2em;
-                padding: .25em;
-            }
-            td{
-                border: 2px solid rgb(199, 151, 57);
-            }
-            .button{
-                font-size: medium;
-            }
-            input{
-                font-size: 1.5em;
-                font-weight: bold;
-                width: 500px;
-            }
-        </style>
-        <script type="text/javascript">
-            function pizzaorder() {
+<head>
+    <title>Gallo Pizza & Sub Shop</title>
+    <style>
+        body {
+            color: burlywood;
+            background-color: darkred;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 13px;
+        }
+
+        .wrapper {
+            width: 500px;
+            margin: auto;
+        }
+
+        table {
+            border: 6px solid lightblue;
+
+            margin: auto;
+            color: darkred;
+            background-color: ghostwhite;
+            width: 300px;
+        }
+
+        .content {
+            width: 800px;
+            background-color: maroon;
+            padding: .5em;
+        }
+
+        .content td {
+            border: none;
+            color: bisque;
+        }
+
+        .nav {
+            width: 600px;
+            border: none;
+            text-align: center;
+        }
+
+        img {
+            width: 500;
+            height: auto;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        h3 {
+
+            text-align: center;
+        }
+
+        .table {
+            text-align: center;
+            border-collapse: collapse;
+            background-color: blanchedalmond;
+        }
+
+        .table td {
+            border: 4px solid rgb(110, 46, 145);
+            color: #990000;
+            font-size: 1.2em;
+            padding: .25em;
+        }
+
+        td {
+            border: 2px solid rgb(199, 151, 57);
+        }
+
+        .button {
+            font-size: medium;
+        }
+
+        input {
+            font-size: 1.5em;
+            font-weight: bold;
+            width: 500px;
+        }
+    </style>
+    <script type="text/javascript">
+        function pizzaorder() {
             //prices & tax rate constants
             const salestaxrate = 0.07;
             const discountrate = .15;
@@ -83,7 +97,7 @@
             const pricemedium = 10.99;
             const pricelarge = 13.99;
             const pricexlarge = 17.99;
-            const dollar = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD',})
+            const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', })
             const howtoplay = "\n\nCredit, Debit, and Cash accepted";
             const line = "\n------------------------------------"
 
@@ -105,7 +119,7 @@
             if (pizzasize == "S" || pizzasize == "s") pizzacost = numpizzas * pricesmall;
             if (pizzasize == "M" || pizzasize == "m") pizzacost = numpizzas * pricemedium;
             if (pizzasize == "L" || pizzasize == "l") pizzacost = numpizzas * pricelarge;
-            if (pizzasize == "X" || pizzasize == "x") pizzacost = numpizzas * pricexlarge;
+            if (pizzasize == "XL" || pizzasize == "x") pizzacost = numpizzas * pricexlarge;
 
             if (numpizzas >= 10) discountamount = pizzacost * discountrate;
             pizzacost -= discountamount; //subtract discount from pizzacost
@@ -123,7 +137,7 @@
         function suborder() {
             const salestaxrate = 0.07;
             const subPrices = [12.99, 10.99, 12.99, 11.99];
-            const dollar = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD',});
+            const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', });
 
             let subChoice = parseInt(prompt("Enter: \n 1. for Hot Italian Sub \n 2. for Ham and Cheese Sub\n 3. for Philly Cheese Steak Sub\n 4. for Smoked Turkey Sub")) - 1;
             let numSubs = parseInt(prompt("Enter the number of subs you would like to order:"));
@@ -139,92 +153,150 @@
                 "\nTotal:          " + dollar.format(total));
         }
 
-        </script>
-    </head>
-    <body>
-        <div class="wrapper">
-            <header>
-                <table class="nav" style="background-color:rgb(24, 189, 96);">
-                    <tr>
-                        <td>
-                            <a href="index.html">Home</a>
-                         </td>
-                         <td>
-                            <a href="https://www.pvcc.edu">PVCC</a>
-                         </td>
-                         <td>
-                            <a href="https://www.w3schools.com/html/">W3 Schools</a>
-                         </td>
-                         <td>
-                            <a href="contactus.html">Contact Us</a>
-                         </td>
-                    </tr>
-                </table>
-            </header>
-            <main>
-                <table class="content">
-                    <tr>
-                        <td colspan="4">
-                            <h1>Gallo Pizza & Sub Shop</h1>
-                            <h2>Best pizza this side of Italy!</h2>
-                            <ul>
-                                <li>5600 Main Street</li>
-                                <li>Call to order: 417.330.9800</li>
-                                <li>Fast and free delivery within city limits!</li>
-                                <li>Credit, debit, cash accepted</li>
-                            </ul>
-                            <table class="table">
-                                <tr><td colspan = "2"><h3>Pizza Price List</h3></td></tr>
-                                <tr><td colspan = "2"><img src="pizza.jpeg"/></td></tr>
-                                <tr><td>Small      </td>  <td>$7.99</td></tr>
-                                <tr><td>medium      </td>  <td>$10.99</td></tr>
-                                <tr><td>Large      </td>  <td>$13.99</td></tr>
-                                <tr><td>Xlarge      </td>  <td>$17.99</td></tr>
-                                <tr><td>Sales Tax     </td>  <td>7%</td></tr>
-                                <tr><td colspan="2">Gallo Pizza Party:
-                                 <br  />Order 10 or more pizzas, recive a 15% discount!</td></tr>
-                                    <tr><td colspan="2">
-                                         <form><input type = "button" value="Click here to order pizza" 
-                                         class="button" onclick="pizzaorder()" /></form></td>
-                                     </td></tr>
-                                     </td></tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <table class="content">
-                        <tr>
-                            <td colspan="4">
-                                <h1>Gallo Pizza & Sub Shop</h1>
-                                <h2>Best pizza and subs this side of Italy!</h2>
-                                <ul>
-                                    <li>5600 Main Street</li>
-                                    <li>Call to order: 417.330.9800</li>
-                                    <li>Fast and free delivery within city limits!</li>
-                                    <li>Credit, debit, cash accepted</li>
-                                </ul>
-                                <table class="table">
-                                    <tr><td colspan = "2"><h3>Sub Sandwich prices at Gallo's are as follows:</h3></td></tr>
-                                    <tr><td colspan = "2"><img src="sub.jpeg"/></td></tr>
-                                    <tr><td>Hot italian Sub      </td>  <td>$12.99</td></tr>
-                                    <tr><td>Ham & Cheese Sub     </td>  <td>$10.99</td></tr>
-                                    <tr><td>Philly Cheese Steak      </td>  <td>$12.99</td></tr>
-                                    <tr><td>Smoked Turkey Sub      </td>  <td>$11.99</td></tr>
-                                    <tr><td>Sales Tax     </td>  <td>7%</td></tr>
-                                    <tr><td colspan="2">Gallo sub Party:
-                                     <br  />Order 10 or more subs, recive a 15% discount!</td></tr>
-                                        <tr><td colspan="2">
-                                             <form>
-                                                <input type = "button" value="Click here to order sub" 
-                                             class="button" onclick="suborder()" />
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <table class="nav" style="background-color:rgb(24, 189, 96);">
+                <tr>
+                    <td>
+                        <a href="index.html">Home</a>
+                    </td>
+                    <td>
+                        <a href="https://www.pvcc.edu">PVCC</a>
+                    </td>
+                    <td>
+                        <a href="https://www.w3schools.com/html/">W3 Schools</a>
+                    </td>
+                    <td>
+                        <a href="contactus.html">Contact Us</a>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <main>
+            <table class="content">
+                <tr>
+                    <td colspan="4">
+                        <h1>Gallo Pizza & Sub Shop</h1>
+                        <h2>Best pizza this side of Italy!</h2>
+                        <ul>
+                            <li>5600 Main Street</li>
+                            <li>Call to order: 417.330.9800</li>
+                            <li>Fast and free delivery within city limits!</li>
+                            <li>Credit, debit, cash accepted</li>
+                        </ul>
+                        <table class="table">
+                            <tr>
+                                <td colspan="2">
+                                    <h3>Pizza Price List</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="pizza.jpg" /></td>
+                            </tr>
+                            <tr>
+                                <td>Small </td>
+                                <td>$7.99</td>
+                            </tr>
+                            <tr>
+                                <td>medium </td>
+                                <td>$10.99</td>
+                            </tr>
+                            <tr>
+                                <td>Large </td>
+                                <td>$13.99</td>
+                            </tr>
+                            <tr>
+                                <td>Xlarge </td>
+                                <td>$17.99</td>
+                            </tr>
+                            <tr>
+                                <td>Sales Tax </td>
+                                <td>7%</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Gallo Pizza Party:
+                                    <br />Order 10 or more pizzas, recive a 15% discount!
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <form><input type="button" value="Click here to order pizza" class="button"
+                                            onclick="pizzaorder()" /></form>
+                                </td>
+                                </tr>
+                    
+                    </table>
+                    </td>
+                </tr>
+                </td>
+                </tr>
+            </table>
+            </td>
+            </tr>
+            <table class="content">
+                <tr>
+                    <td colspan="4">
+                        <h1>Gallo Pizza & Sub Shop</h1>
+                        <h2>Best pizza and subs this side of Italy!</h2>
+                        <ul>
+                            <li>5600 Main Street</li>
+                            <li>Call to order: 417.330.9800</li>
+                            <li>Fast and free delivery within city limits!</li>
+                            <li>Credit, debit, cash accepted</li>
+                        </ul>
+                        <table class="table">
+                            <tr>
+                                <td colspan="2">
+                                    <h3>Sub Sandwich prices at Gallo's are as follows:</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="sub.jpg" /></td>
+                            </tr>
+                            <tr>
+                                <td>Hot italian Sub </td>
+                                <td>$12.99</td>
+                            </tr>
+                            <tr>
+                                <td>Ham & Cheese Sub </td>
+                                <td>$10.99</td>
+                            </tr>
+                            <tr>
+                                <td>Philly Cheese Steak </td>
+                                <td>$12.99</td>
+                            </tr>
+                            <tr>
+                                <td>Smoked Turkey Sub </td>
+                                <td>$11.99</td>
+                            </tr>
+                            <tr>
+                                <td>Sales Tax </td>
+                                <td>7%</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Gallo sub Party:
+                                    <br />Order 10 or more subs, recive a 15% discount!
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <form>
+                                        <input type="button" value="Click here to order sub" class="button"
+                                            onclick="suborder()" />
                                     </form>
-                                    </td>
-                                        
-                                </table>
-                            </td>
-                        </tr>
-                </table>
-               
-            </main>
-        </div>
-    </body>
+                                </td>
+
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </main>
+    </div>
+</body>
+
 </html>
